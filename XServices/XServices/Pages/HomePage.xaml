@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XServices.Pages.HomePage"
+             Title="Services">
+  <ScrollView>
+    <StackLayout Spacing="10" Padding="15" VerticalOptions="Center">
+      <Button x:Name="productsButton"
+              Text="Products"
+              BackgroundColor="Yellow"
+              TextColor="Black"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <Button x:Name="serviesButton"
+              Text="Services"
+              BackgroundColor="Aqua"
+              TextColor="Black"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <Button x:Name="queriesButton"
+              Text="Queries"
+              BackgroundColor="Purple"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>

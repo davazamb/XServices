@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XServices.Pages.ServicePage"
+             Title="Services">
+  <ScrollView>
+    <StackLayout Spacing="10" Padding="15">
+      <Picker x:Name="productPicker"
+              Title="Select a product"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Quantity: "
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <Entry x:Name="quantityEntry"
+               IsEnabled="False"
+               Text="1"
+               FontAttributes="Bold"
+               FontSize="20"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="Center"/>
+        <Stepper x:Name="quantityStepper"
+                 Value="1"
+                 Increment="1"
+                 Minimum="1"
+                 Maximum="999999"
+                 HorizontalOptions="End"
+                 VerticalOptions="Center"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="Date: "
+               HorizontalOptions="Start"
+               VerticalOptions="Center"/>
+        <DatePicker x:Name="dateDatePicker"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Center"/>
+      </StackLayout>
+      <Button x:Name="addButton"
+              Text="Add"
+              BackgroundColor="Yellow"
+              TextColor="Black"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
+      <ListView x:Name="servicesListView"/>
+    </StackLayout>
+  </ScrollView>
+
+</ContentPage>
